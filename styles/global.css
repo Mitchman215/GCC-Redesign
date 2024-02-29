@@ -1,1 +1,29 @@
 @import 'reset.css';
+
+:root {
+  /* Colors */
+  --clr-text: #221c20;
+
+  --clr-interact-100: #fff3eb;
+  --clr-interact-300: #ffcfab;
+  --clr-interact-500: #ffae70;
+  --clr-interact-700: #f56a00;
+
+  --clr-primary-100: #d8e6e9;
+  --clr-primary-300: #9ac2c9;
+  --clr-primary-500: #88b6bf;
+  --clr-primary-700: #56939f;
+}
+
+/* Fonts */
+body {
+  font-family: 'Source Serif Pro', sans-serif;
+}
+.main-nav {
+  font-family: 'Cascadia Code';
+  display: flex;
+}
+
+.nav-menu {
+  display: flex;
+}
