@@ -13,42 +13,43 @@
 
   <body>
     <header>
-      <nav class="main-nav">
-        <img src="assets/gcc-logo.png" alt="GCC's logo" />
+      <img src="assets/gcc-logo.png" alt="GCC's logo" />
+      <nav>
         <ul class="nav-menu" role="list">
 
           <li class="nav-item">
-            <button>
+            <button class="nav-item-dropdown">
               About
               <span class="material-icons">arrow_drop_down</span>
             </button>
           </li>
 
           <li class="nav-item">
-            <button>
+            <button class="nav-item-dropdown">
               Download
               <span class="material-icons">arrow_drop_down</span>
             </button>
           </li>
 
           <li class="nav-item">
-            <button>
+            <button class="nav-item-dropdown">
               Documentation
               <span class="material-icons">arrow_drop_down</span>
-              <span class="material-icons">arrow_drop_up</span>
+              <!-- <span class="material-icons">arrow_drop_up</span> -->
             </button>
           </li>
 
           <li class="nav-item">
-            <button>
+            <button class="nav-item-dropdown">
               Development
               <span class="material-icons">arrow_drop_down</span>
             </button>
           </li>
 
-          <li class="nav-item">
-            <button>
-              <span class="material-icons">search</span>
+          <li class="nav-item search">
+            <input class="search-input" placeholder="Search this site" />
+            <button class="search-button">
+              <span class="material-icons md-36">search</span>
             </button>
           </li>
         </ul>
@@ -71,29 +72,62 @@
 
       <article class="news">
         <h2>Recent News</h2>
-        <button class="subscribe-button">
-          Subscribe
-        </button>
+        <form class="subscribe-form">
+          <input placeholder="Enter your email address" />
+          <button class="subscribe-button">
+            Subscribe
+          </button>
+        </form>
+        
         <table class="news-feed">
           <tr>
             <td>2023-11-20</td>
             <td><a href="#">GCC developer room at FOSDEM 2024: Call for Participation open</a></td>
           </tr>
           <tr>
-            <td>2023-11-20</td>
-            <td><a href="#">GCC developer room at FOSDEM 2024: Call for Participation open</a></td>
+            <td>2023-09-05</td>
+            <td><a href="#">GNU Tools Cauldron 2023</a></td>
           </tr>
           <tr>
-            <td>2023-11-20</td>
-            <td><a href="#">GCC developer room at FOSDEM 2024: Call for Participation open</a></td>
+            <td>2023-07-27</td>
+            <td><a href="#">GCC 13.2 released</a></td>
+          </tr>
+          <tr>
+            <td>2023-07-07</td>
+            <td><a href="#">GCC 10.5 released</a></td>
+          </tr>
+          <tr>
+            <td>2023-06-16</td>
+            <td><a href="#">GCC Code of Conduct adopted</a></td>
+          </tr>
+          <tr>
+            <td>2023-05-29</td>
+            <td><a href="#">GCC 11.4 released</a></td>
           </tr>
         </table>
+
+        <div class="older-news">
+          <a href="#">Older News...</a>
+        </div>
       </article>
 
       <article class="releases">
         <h2>Supported Releases</h2>
         <ul>
-          <li>GCC 13.2  > more_details...</li>
+          <li class="release-item">
+            <a href="#">GCC 13.2</a>  > 
+            <button>more details...</button>
+          </li>
+
+          <li class="release-item">
+            <a href="#">GCC 12.3</a>  > 
+            <button>more details...</button>
+          </li>
+
+          <li class="release-item">
+            <a href="#">GCC 11.4</a>  > 
+            <button>more details...</button>
+          </li>
         </ul>
       </article>
     </main>
