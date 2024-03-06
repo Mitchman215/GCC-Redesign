@@ -235,6 +235,15 @@ td {
   margin-bottom: 1rem;
 }
 
+/* Footer */
+
 main {
   margin-bottom: 5rem;
+}
+
+footer {
+  font-size: 1rem;
+  text-align: start;
+  background: var(--clr-primary-100);
+  padding: 0.5rem 1rem;
 }
