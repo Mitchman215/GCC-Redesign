@@ -152,13 +152,10 @@ header button {
 }
 
 /* Hide search text input at medium screen size */
-@media (width < 1260px) {
+@media (width < 1350px) {
   .search-input {
     display: none;
   }
-}
-
-@media (width < 995px) {
 }
 
 @media (width < 1080px) {
