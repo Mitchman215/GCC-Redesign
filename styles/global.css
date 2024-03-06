@@ -16,7 +16,7 @@
 
   --fw-normal: 400;
   --fw-semibold: 600;
-  --fw-bold: 800;
+  --fw-bold: 700;
 }
 
 /* Default typography and element styling */
@@ -33,7 +33,7 @@ body {
 }
 
 header {
-  font-family: 'Cascadia Code';
+  font-family: 'Azeret Mono';
   color: var(--clr-text);
   font-size: 1.75rem;
   font-weight: var(--fw-semibold);
@@ -117,15 +117,6 @@ header button {
   }
 }
 
-.search {
-  padding-left: 0.5rem;
-  display: flex;
-}
-
-.search-input {
-  margin: auto 0;
-}
-
 .icon-button {
   &:hover {
     border-radius: 10px;
@@ -138,8 +129,18 @@ header button {
   }
 }
 
+.search {
+  padding-left: 0.5rem;
+  display: flex;
+}
+
+.search-input {
+  margin: auto 0;
+}
+
 .search-button {
   padding-right: 0.5rem;
+  font-weight: var(--fw-semibold);
 }
 
 .hamburger {
@@ -160,7 +161,7 @@ header button {
 @media (width < 995px) {
 }
 
-@media (width < 1010px) {
+@media (width < 1080px) {
   .main-nav {
     margin-right: 1rem;
   }
@@ -198,6 +199,10 @@ td {
   margin-bottom: 0.5rem;
 }
 
+.subscribe-input {
+  width: 32ch;
+}
+
 .subscribe-button {
   background-color: var(--clr-interact-300);
   border: 0;
@@ -228,4 +233,8 @@ td {
 
 .release-item {
   margin-bottom: 1rem;
+}
+
+main {
+  margin-bottom: 5rem;
 }
