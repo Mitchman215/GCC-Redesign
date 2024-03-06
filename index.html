@@ -18,51 +18,58 @@
   <body>
     <header>
       <img class="logo" src="assets/gcc-logo.png" alt="GCC's logo" />
-      <nav class="main-nav">
-        <ul class="nav-menu" role="list">
+      <div class="title-and-nav">
+        <h1>
+          GCC<span class="long-title">, the GNU Compiler Collection</span>
+        </h1>
 
-          <li class="nav-item">
-            <button class="nav-item-dropdown">
-              About
-              <span class="material-icons">arrow_drop_down</span>
+        <div class="nav-bar">
+          <nav class="main-nav">
+            <ul class="nav-menu" role="list">
+    
+              <li class="nav-item">
+                <button class="nav-item-dropdown">
+                  About
+                  <span class="material-icons">arrow_drop_down</span>
+                </button>
+              </li>
+    
+              <li class="nav-item">
+                <button class="nav-item-dropdown">
+                  Download
+                  <span class="material-icons">arrow_drop_down</span>
+                </button>
+              </li>
+    
+              <li class="nav-item">
+                <button class="nav-item-dropdown">
+                  Documentation
+                  <span class="material-icons">arrow_drop_down</span>
+                  <!-- <span class="material-icons">arrow_drop_up</span> -->
+                </button>
+              </li>
+    
+              <li class="nav-item">
+                <button class="nav-item-dropdown">
+                  Development
+                  <span class="material-icons">arrow_drop_down</span>
+                </button>
+              </li>
+            </ul>
+  
+            <button class="hamburger icon-button">
+              <span class="material-icons">menu</span>
             </button>
-          </li>
-
-          <li class="nav-item">
-            <button class="nav-item-dropdown">
-              Download
-              <span class="material-icons">arrow_drop_down</span>
+          </nav>
+  
+          <form class="nav-item search">
+            <input aria-label="search" class="search-input" placeholder="Search this site" />
+            <button aria-label="submit" class="search-button icon-button">
+              <span class="material-icons md-36">search</span>
             </button>
-          </li>
-
-          <li class="nav-item">
-            <button class="nav-item-dropdown">
-              Documentation
-              <span class="material-icons">arrow_drop_down</span>
-              <!-- <span class="material-icons">arrow_drop_up</span> -->
-            </button>
-          </li>
-
-          <li class="nav-item">
-            <button class="nav-item-dropdown">
-              Development
-              <span class="material-icons">arrow_drop_down</span>
-            </button>
-          </li>
-
-        </ul>
-        
-        <div class="nav-item search">
-          <input class="search-input" type="search" placeholder="Search this site" />
-          <button class="search-button icon-button">
-            <span class="material-icons md-36">search</span>
-          </button>
+          </form>
         </div>
-
-        <button class="hamburger icon-button">
-          <span class="material-icons">menu</span>
-        </button>
-      </nav>
+      </div>
     </header>
 
     <main>
@@ -89,6 +96,12 @@
         </form>
         
         <table class="news-feed">
+          <thead class="sr-only">
+            <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Headline</th>
+            </tr>
+          </thead>
           <tr>
             <td>2023-11-20</td>
             <td><a href="#">GCC developer room at FOSDEM 2024: Call for Participation open</a></td>
@@ -118,6 +131,18 @@
         <div class="older-news">
           <a href="#">Older News...</a>
         </div>
+
+        <form class="subscribe-form">
+          <label for="email-input">
+            Join our mailing list to stay updated!
+          </label>
+          <div>
+            <input id="email-input" aria-label="Email Address" placeholder="john@gmail.com" type="email" />
+            <button aria-label="submit" class="subscribe-button">
+              Subscribe
+            </button>
+          </div>
+        </form>
       </article>
 
       <article class="releases">
