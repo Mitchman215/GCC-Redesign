@@ -1,0 +1,1 @@
+<https://mitchman215.github.io/cs1300-portfolio/case-studies/responsive-redesign/>
